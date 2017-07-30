@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='TornadoHelloApp',
@@ -7,6 +7,6 @@ setup(
     author='evemorgen',
     url='',
     license='MIT',
-    packages=['tornado_app'],
-    entry_points={'console_scripts': ['hellotornado = tornado_app.tornado_helloworld', ], },
+    packages=find_packages(),
+    entry_points={'console_scripts': ['hellotornado = tornado_app.tornado_helloworld:main', ], },
 )

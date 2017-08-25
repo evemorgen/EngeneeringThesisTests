@@ -9,4 +9,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     entry_points={'console_scripts': ['hellotornado = tornado_app.tornado_helloworld:main', ], },
+    install_requires=[
+        'tornado==4.4'
+    ]
 )
